@@ -54,7 +54,7 @@ const questions = [
   { question: "AdamW의 특징은?", choices: ["weight decay를 gradient에 포함", "weight decay를 gradient와 분리", "learning rate 제거", "momentum 제거"], answer: 1 },
   { question: "Numeric gradient가 error-prone한 이유는?", choices: ["gradient 없음", "매번 loss를 다시 계산하여 수치 오차 발생", "계산이 빠름", "weight 감소"], answer: 1 },
   { question: "Conv layer 2개가 있을 때 receptive field를 input 기준으로 계산하면? (각 layer: kernel=3, stride=1)", choices: ["3", "5", "7", "9"], answer: 1 },
-  { question: "Conv layer 2개 (각각 kernel=3, stride=2)일 때 두 번째 layer의 receptive field를 이전 layer 기준으로 계산하면?", choices: ["3", "5", "7", "9"], answer: 1 },
+  { question: "Conv layer 2개 (각각 kernel=3, stride=2)일 때 두 번째 layer의 receptive field를 이전 layer 기준으로 계산하면?", choices: ["3", "5", "7", "9"], answer: 0 },
   { question: "Sliding window 방식의 특징은?", choices: ["이미지를 한 번에 전체 처리한다", "고정된 크기의 window를 이동하며 부분적으로 처리한다", "항상 output 크기를 유지한다", "stride를 사용할 수 없다"], answer: 1 },
   { question: "LeNet의 특징은?", choices: ["대규모 ImageNet 데이터 사용", "초기 CNN 구조로 손글씨 인식에 사용", "ReLU 처음 사용", "GPU 병렬 처리 사용"], answer: 1 },
   { question: "AlexNet의 특징은?", choices: ["tanh만 사용", "작은 데이터셋 사용", "ReLU와 GPU를 활용한 대규모 이미지 분류", "fully connected 없음"], answer: 2 },
