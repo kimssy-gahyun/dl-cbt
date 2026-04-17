@@ -1,0 +1,146 @@
+.result-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.result-header {
+  background: #1d3557;
+  color: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.result-header h1 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+.score-box {
+  margin-bottom: 16px;
+}
+
+.score-num {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.score-total {
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.score-percent {
+  display: block;
+  font-size: 1.2rem;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+.btn-reset {
+  padding: 10px 32px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+
+.btn-reset:hover {
+  background: white;
+  color: #1d3557;
+}
+
+.result-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.result-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  border-left: 5px solid #ccc;
+}
+
+.result-item.correct {
+  border-left-color: #2a9d8f;
+}
+
+.result-item.wrong {
+  border-left-color: #e63946;
+}
+
+.result-q {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.result-badge {
+  font-weight: 900;
+  margin-right: 6px;
+}
+
+.result-item.correct .result-badge { color: #2a9d8f; }
+.result-item.wrong .result-badge { color: #e63946; }
+
+.q-num {
+  font-weight: 700;
+  color: #1d3557;
+  margin-right: 4px;
+}
+
+.result-choices {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.result-choices li {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.93rem;
+}
+
+.result-choices li.answer {
+  background: #d4edda;
+  font-weight: 600;
+  color: #155724;
+}
+
+.result-choices li.my-wrong {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.choice-label {
+  font-weight: 700;
+  margin-right: 6px;
+  color: #457b9d;
+}
+
+.result-choices li.answer .choice-label,
+.result-choices li.my-wrong .choice-label {
+  color: inherit;
+}
+
+.explanation {
+  font-size: 0.9rem;
+  color: #555;
+  background: #fffbe6;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-top: 8px;
+  line-height: 1.5;
+}

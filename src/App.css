@@ -1,0 +1,167 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1d3557;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.app-header h1 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.header-score {
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.2);
+  padding: 4px 14px;
+  border-radius: 20px;
+}
+
+.score-banner {
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.score-banner.pass  { background: #d4edda; color: #155724; }
+.score-banner.soso  { background: #fff3cd; color: #856404; }
+.score-banner.fail  { background: #f8d7da; color: #721c24; }
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── 문제 카드 ── */
+.question-card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  border-left: 5px solid #d0d0d0;
+  transition: border-color 0.2s;
+}
+
+.question-card.correct { border-left-color: #2a9d8f; }
+.question-card.wrong   { border-left-color: #e63946; }
+
+.question-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.q-num {
+  font-weight: 700;
+  color: #1d3557;
+  margin-right: 4px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.badge-correct { background: #d4edda; color: #155724; }
+.badge-wrong   { background: #f8d7da; color: #721c24; }
+
+/* ── 보기 ── */
+.choices {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: all 0.12s;
+  user-select: none;
+}
+
+.choice:hover {
+  border-color: #457b9d;
+  background: #f0f8ff;
+}
+
+.choice.selected {
+  border-color: #1d3557;
+  background: #dbeafe;
+  font-weight: 600;
+}
+
+/* 채점 후 */
+.choice.answer {
+  border-color: #2a9d8f;
+  background: #d4edda;
+  font-weight: 700;
+  color: #155724;
+  cursor: default;
+}
+
+.choice.my-wrong {
+  border-color: #e63946;
+  background: #f8d7da;
+  color: #721c24;
+  cursor: default;
+}
+
+.choice-label {
+  font-weight: 700;
+  color: #457b9d;
+  flex-shrink: 0;
+}
+
+.choice.answer   .choice-label { color: #155724; }
+.choice.my-wrong .choice-label { color: #721c24; }
+
+/* ── 버튼 ── */
+.bottom-buttons {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 30px;
+}
+
+.btn {
+  padding: 14px 48px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s;
+}
+
+.btn:hover { opacity: 0.85; }
+
+.btn-submit { background: #e63946; color: white; }
+.btn-reset  { background: #1d3557; color: white; }
