@@ -45,7 +45,7 @@ const questions = [
   { question: "Flatten 역할은?", choices: ["conv", "1D 변환", "gradient 제거", "pooling"], answer: 1 },
   { question: "CNN 마지막 FC layer 이유는?", choices: ["이미지 축소", "classification", "feature 제거", "padding"], answer: 1 },
   { question: "Conv output size (3×32×32, kernel 3, stride 1, padding 1, filter 8)", choices: ["8×32×32", "8×30×30", "3×32×32", "8×34×34"], answer: 0 },
-  { question: "Conv parameter 수 (3채널, filter 10, kernel 5×5)", choices: ["750", "760", "800", "1500"], answer: 1 },
+  { question: "Conv parameter 수 (3채널, filter 10, kernel 5×5, bias 1 포함)", choices: ["750", "760", "800", "1500"], answer: 1 },
   { question: "Convolution output size (Input: 3×28×28, Kernel: 3, Stride: 2, Padding: 1, Filter: 6)", choices: ["6 × 28 × 28", "6 × 14 × 14", "6 × 13 × 13", "3 × 14 × 14"], answer: 1 },
   { question: "Backprop에서 덧셈 노드 (z = x + y)의 gradient는?", choices: ["dz/dx = 0", "dz/dx = 1", "dz/dx = x", "dz/dx = y"], answer: 1 },
   { question: "Backprop에서 곱셈 노드 (z = x * y)의 gradient는?", choices: ["dz/dx = 1", "dz/dx = x", "dz/dx = y", "dz/dx = x+y"], answer: 2 },
@@ -61,6 +61,12 @@ const questions = [
   { question: "Sigmoid 함수 σ(x)의 미분식은?", choices: ["σ(x)", "σ(x)(1 - σ(x))", "1 - σ(x)", "σ(x)^2"], answer: 1 },
   { question: "입력이 이동하면 출력도 동일하게 이동하는 성질을 무엇이라 하는가?", choices: ["translation invariance", "translation equivariance", "overfitting", "regularization"], answer: 1 },
   { question: "Mini-batch를 사용하는 이유는?", choices: ["gradient를 없애기 위해", "계산 효율성과 안정적인 학습을 위해", "데이터를 줄이기 위해", "overfitting을 완전히 제거하기 위해"], answer: 1 },
+  { question: "Conv parameter 수 (1채널, filter 8, kernel 3×3, bias 1 포함)", choices: ["72", "80", "88", "96"], answer: 1 },
+  { question: "Conv parameter 수 (3채널, filter 6, kernel 3×3, bias 1 포함)", choices: ["162", "168", "174", "192"], answer: 1 },
+  { question: "Convolution output size (Input: 3×32×32, Kernel: 2, Stride: 2, Padding: 0, Filter: 8)", choices: ["8×32×32", "8×16×16", "8×15×15", "3×16×16"], answer: 1 },
+  { question: "Convolution output size (Input: 3×28×28, Kernel: 4, Stride: 2, Padding: 1, Filter: 16)", choices: ["16×28×28", "16×13×13", "16×14×14", "3×14×14"], answer: 2 },
+  { question: "Conv 연산 횟수 (Input: 1×8×8, Kernel: 3×3, Stride: 1, Padding: 0, Filter: 4)", choices: ["648", "1296", "2592", "288"], answer: 1 },
+  { question: "Conv 연산 횟수 (Input: 3×6×6, Kernel: 3×3, Stride: 1, Padding: 0, Filter: 2)", choices: ["432", "864", "1728", "216"], answer: 1 },
 ]
 
 export default questions
