@@ -54,6 +54,8 @@ const questions = [
   { question: "AdamW의 특징은?", choices: ["weight decay를 gradient에 포함", "weight decay를 gradient와 분리", "learning rate 제거", "momentum 제거"], answer: 1 },
   { question: "Numeric gradient가 error-prone한 이유는?", choices: ["gradient 없음", "매번 loss를 다시 계산하여 수치 오차 발생", "계산이 빠름", "weight 감소"], answer: 1 },
   { question: "Conv layer 2개가 있을 때 receptive field를 input 기준으로 계산하면? (각 layer: kernel=3, stride=1)", choices: ["3", "5", "7", "9"], answer: 1 },
+  { question: "Conv layer 3개가 있을 때 receptive field를 input 기준으로 계산하면? (각 layer: kernel=3, stride=1)", choices: ["3", "5", "7", "9"], answer: 2 },
+  { question: "Conv layer 2개가 있을 때 receptive field를 input 기준으로 계산하면? (각 layer: kernel=5, stride=1)", choices: ["5", "7", "9", "11"], answer: 2 },
   { question: "Conv layer 2개 (각각 kernel=3, stride=2)일 때 두 번째 layer의 receptive field를 이전 layer 기준으로 계산하면?", choices: ["3", "5", "7", "9"], answer: 0 },
   { question: "Sliding window 방식의 특징은?", choices: ["이미지를 한 번에 전체 처리한다", "고정된 크기의 window를 이동하며 부분적으로 처리한다", "항상 output 크기를 유지한다", "stride를 사용할 수 없다"], answer: 1 },
   { question: "LeNet의 특징은?", choices: ["대규모 ImageNet 데이터 사용", "초기 CNN 구조로 손글씨 인식에 사용", "ReLU 처음 사용", "GPU 병렬 처리 사용"], answer: 1 },
@@ -63,10 +65,14 @@ const questions = [
   { question: "Mini-batch를 사용하는 이유는?", choices: ["gradient를 없애기 위해", "계산 효율성과 안정적인 학습을 위해", "데이터를 줄이기 위해", "overfitting을 완전히 제거하기 위해"], answer: 1 },
   { question: "Conv parameter 수 (1채널, filter 8, kernel 3×3, bias 1 포함)", choices: ["72", "80", "88", "96"], answer: 1 },
   { question: "Conv parameter 수 (3채널, filter 6, kernel 3×3, bias 1 포함)", choices: ["162", "168", "174", "192"], answer: 1 },
+  { question: "Conv parameter 수 (4채널, filter 8, kernel 3×3, bias 1 포함)", choices: ["288", "296", "304", "592"], answer: 1 },
+  { question: "Conv parameter 수 (2채널, filter 4, kernel 5×5, bias 1 포함)", choices: ["200", "204", "208", "400"], answer: 1 },
   { question: "Convolution output size (Input: 3×32×32, Kernel: 2, Stride: 2, Padding: 0, Filter: 8)", choices: ["8×32×32", "8×16×16", "8×15×15", "3×16×16"], answer: 1 },
   { question: "Convolution output size (Input: 3×28×28, Kernel: 4, Stride: 2, Padding: 1, Filter: 16)", choices: ["16×28×28", "16×13×13", "16×14×14", "3×14×14"], answer: 2 },
+  { question: "Convolution output size (Input: 3×32×32, Kernel: 5, Stride: 1, Padding: 0, Filter: 8)", choices: ["8×32×32", "8×28×28", "8×27×27", "3×28×28"], answer: 1 },
   { question: "Conv 연산 횟수 (Input: 1×8×8, Kernel: 3×3, Stride: 1, Padding: 0, Filter: 4)", choices: ["648", "1296", "2592", "288"], answer: 1 },
   { question: "Conv 연산 횟수 (Input: 3×6×6, Kernel: 3×3, Stride: 1, Padding: 0, Filter: 2)", choices: ["432", "864", "1728", "216"], answer: 1 },
+  { question: "Conv 연산 횟수 (Input: 3×10×10, Kernel: 3×3, Stride: 1, Padding: 0, Filter: 4)", choices: ["3456", "6912", "13824", "1728"], answer: 1 },
 ]
 
 export default questions
