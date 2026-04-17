@@ -57,8 +57,8 @@ const questions = [
   { question: "Conv layer 2개 (각각 kernel=3, stride=2)일 때 두 번째 layer의 receptive field를 이전 layer 기준으로 계산하면?", choices: ["3", "5", "7", "9"], answer: 1 },
   { question: "Sliding window 방식의 특징은?", choices: ["이미지를 한 번에 전체 처리한다", "고정된 크기의 window를 이동하며 부분적으로 처리한다", "항상 output 크기를 유지한다", "stride를 사용할 수 없다"], answer: 2 },
   { question: "LeNet의 특징은?", choices: ["대규모 ImageNet 데이터 사용", "초기 CNN 구조로 손글씨 인식에 사용", "ReLU 처음 사용", "GPU 병렬 처리 사용"], answer: 2 },
-  { question: "AlexNet의 특징은?", choices: ["tanh만 사용", "작은 데이터셋 사용", "ReLU와 GPU를 활용한 대규모 이미지 분류", "fully connected 없음"], answer: 3 },
-  { question: "Sigmoid 함수 σ(x)의 미분식은?", choices: ["σ(x)", "σ(x)(1 - σ(x))", "1 - σ(x)", "σ(x)^2"], answer: 2 },
+  { question: "AlexNet의 특징은?", choices: ["tanh만 사용", "작은 데이터셋 사용", "ReLU와 GPU를 활용한 대규모 이미지 분류", "fully connected 없음"], answer: 2 },
+  { question: "Sigmoid 함수 σ(x)의 미분식은?", choices: ["σ(x)", "σ(x)(1 - σ(x))", "1 - σ(x)", "σ(x)^2"], answer: 1 },
   { question: "입력이 이동하면 출력도 동일하게 이동하는 성질을 무엇이라 하는가?", choices: ["translation invariance", "translation equivariance", "overfitting", "regularization"], answer: 2 },
   { question: "Mini-batch를 사용하는 이유는?", choices: ["gradient를 없애기 위해", "계산 효율성과 안정적인 학습을 위해", "데이터를 줄이기 위해", "overfitting을 완전히 제거하기 위해"], answer: 2 },
 ]
