@@ -27,7 +27,7 @@ const questions = [
   { question: "Gradient checking 목적은?", choices: ["학습", "속도 증가", "구현 검증", "overfitting 감소"], answer: 2 },
   { question: "Chain rule 의미는?", choices: ["덧셈", "미분 연결", "확률 계산", "평균"], answer: 1 },
   { question: "Backprop 핵심은?", choices: ["forward", "random update", "chain rule", "normalization"], answer: 2 },
-  { question: "Affine layer는?", choices: ["conv", "Wx+b", "relu", "pool"], answer: 1 },
+  { question: "Linear layer의 연산은?", choices: ["convolution", "Wx + b", "ReLU", "pooling"], answer: 1 },
   { question: "Activation function 역할은?", choices: ["선형 유지", "비선형 추가", "gradient 제거", "weight 감소"], answer: 1 },
   { question: "2-layer NN 구조는?", choices: ["linear", "linear-linear", "linear-nonlinear-linear", "conv-pool"], answer: 2 },
   { question: "ReLU 정의는?", choices: ["sigmoid", "max(0,x)", "x^2", "tanh"], answer: 1 },
