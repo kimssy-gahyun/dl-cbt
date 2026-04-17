@@ -47,8 +47,8 @@ const questions = [
   { question: "Conv output size (3×32×32, kernel 3, stride 1, padding 1, filter 8)", choices: ["8×32×32", "8×30×30", "3×32×32", "8×34×34"], answer: 0 },
   { question: "Conv parameter 수 (3채널, filter 10, kernel 5×5)", choices: ["750", "760", "800", "1500"], answer: 1 },
   { question: "Pooling (2×2, stride2) 28×28 → ?", choices: ["28×28", "14×14", "26×26", "7×7"], answer: 1 },
-  { question: "y=Wx+b에서 dL/dW는 무엇에 비례?", choices: ["x", "W", "b", "constant"], answer: 0 },
-  { question: "z=x²+y, y=3x일 때 dz/dx는?", choices: ["2x", "2x+3", "3x", "x²"], answer: 1 },
+  { question: "Backprop에서 덧셈 노드 (z = x + y)의 gradient는?", choices: ["dz/dx = 0", "dz/dx = 1", "dz/dx = x", "dz/dx = y"], answer: 1 },
+  { question: "Backprop에서 곱셈 노드 (z = x * y)의 gradient는?", choices: ["dz/dx = 1", "dz/dx = x", "dz/dx = y", "dz/dx = x+y"], answer: 2 },
 ]
 
 export default questions
