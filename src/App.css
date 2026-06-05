@@ -165,3 +165,86 @@
 
 .btn-submit { background: #e63946; color: white; }
 .btn-reset  { background: #1d3557; color: white; }
+
+.multi-hint {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #e63946;
+  margin-left: 6px;
+}
+
+/* ── 홈 버튼 ── */
+.btn-home {
+  padding: 6px 16px;
+  border: 2px solid rgba(255,255,255,0.6);
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+.btn-home:hover { background: rgba(255,255,255,0.2); }
+
+/* ── 홈 화면 ── */
+.home-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f4f8;
+}
+
+.home-card {
+  background: white;
+  border-radius: 20px;
+  padding: 60px 80px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.home-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1d3557;
+  margin-bottom: 10px;
+}
+
+.home-sub {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-exam {
+  padding: 18px 48px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.12s, opacity 0.12s;
+}
+
+.btn-exam:hover { opacity: 0.88; transform: translateY(-2px); }
+
+.btn-exam.midterm { background: #1d3557; color: white; }
+.btn-exam.final   { background: #e63946; color: white; }
+
+/* ── 준비중 ── */
+.coming-soon {
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 1.2rem;
+  color: #888;
+}

@@ -1,0 +1,972 @@
+[
+  {
+    "number": 1,
+    "type": "single",
+    "question": "Dropout의 목적은?",
+    "options": ["학습 속도 감소", "overfitting 방지", "gradient 제거", "입력 크기 증가"],
+    "answer": 1
+  },
+  {
+    "number": 2,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Dropout에 대한 설명으로 맞는 것은?",
+    "options": ["train time에 일부 뉴런을 랜덤하게 끈다", "test time에는 모든 뉴런을 사용한다", "항상 weight를 0으로 만든다", "CNN에서만 사용 가능하다"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 3,
+    "type": "single",
+    "question": "Batch Normalization의 주요 효과는?",
+    "options": ["학습 안정화", "이미지 크기 증가", "loss 제거", "필터 개수 감소"],
+    "answer": 0
+  },
+  {
+    "number": 4,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Data augmentation에 해당하는 것은?",
+    "options": ["random crop", "horizontal flip", "weight decay", "softmax"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 5,
+    "type": "single",
+    "question": "Transfer learning의 핵심 아이디어는?",
+    "options": ["모델을 항상 처음부터 학습", "pretrained model을 활용", "loss를 제거", "데이터를 삭제"],
+    "answer": 1
+  },
+  {
+    "number": 6,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Fine-tuning에 대한 설명으로 맞는 것은?",
+    "options": ["pretrained weight에서 시작한다", "일부 또는 전체 layer를 다시 학습한다", "항상 CNN을 버린다", "gradient descent를 사용하지 않는다"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 7,
+    "type": "single",
+    "question": "AlexNet의 특징은?",
+    "options": ["ReLU와 GPU 사용", "attention만 사용", "RNN 기반 구조", "fully connected 없음"],
+    "answer": 0
+  },
+  {
+    "number": 8,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "VGGNet의 특징으로 맞는 것은?",
+    "options": ["작은 3x3 convolution 반복", "깊은 네트워크 구조", "RNN cell 사용", "attention score 계산"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 9,
+    "type": "single",
+    "question": "ResNet의 핵심 아이디어는?",
+    "options": ["skip connection", "max pooling 제거", "sigmoid만 사용", "RNN 사용"],
+    "answer": 0
+  },
+  {
+    "number": 10,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Skip connection의 장점으로 맞는 것은?",
+    "options": ["gradient 흐름 개선", "깊은 네트워크 학습 도움", "입력 채널 제거", "loss 계산 제거"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 11,
+    "type": "single",
+    "question": "Vanishing gradient 문제와 가장 관련 깊은 것은?",
+    "options": ["깊은 네트워크에서 gradient가 작아짐", "입력 이미지가 커짐", "batch size가 1로 고정됨", "filter 개수가 사라짐"],
+    "answer": 0
+  },
+  {
+    "number": 12,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "좋은 weight initialization이 중요한 이유는?",
+    "options": ["gradient vanishing 완화", "학습 안정화", "데이터 개수 증가", "label 자동 생성"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 13,
+    "type": "single",
+    "question": "ReLU에 적합한 initialization은?",
+    "options": ["He initialization", "zero initialization", "constant one initialization", "random label initialization"],
+    "answer": 0
+  },
+  {
+    "number": 14,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Zero initialization의 문제점은?",
+    "options": ["뉴런들이 같은 값을 학습할 수 있다", "symmetry breaking이 안 된다", "항상 가장 좋은 성능", "gradient checking 불가능"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 15,
+    "type": "single",
+    "question": "Learning rate가 너무 크면?",
+    "options": ["수렴이 빨라짐", "발산 가능", "항상 최적점 도달", "gradient가 사라짐"],
+    "answer": 1
+  },
+  {
+    "number": 16,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Learning rate decay를 사용하는 이유는?",
+    "options": ["후반 학습 안정화", "최적점 근처에서 미세 조정", "loss를 삭제", "데이터를 늘림"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 17,
+    "type": "single",
+    "question": "Mini-batch를 사용하는 이유는?",
+    "options": ["계산 효율성과 안정성의 균형", "gradient 제거", "데이터 삭제", "weight 고정"],
+    "answer": 0
+  },
+  {
+    "number": 18,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Mini-batch gradient descent의 특징은?",
+    "options": ["전체 데이터보다 빠르다", "SGD보다 gradient가 덜 noisy하다", "항상 batch size는 1이다", "backprop을 사용하지 않는다"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 19,
+    "type": "single",
+    "question": "Adam optimizer의 특징은?",
+    "options": ["momentum과 adaptive learning rate 결합", "gradient 사용 안 함", "항상 full batch만 사용", "weight decay 제거"],
+    "answer": 0
+  },
+  {
+    "number": 20,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "AdamW에 대한 설명으로 맞는 것은?",
+    "options": ["Adam 계열 optimizer이다", "weight decay를 gradient update와 분리한다", "CNN에서만 사용 가능하다", "learning rate가 필요 없다"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 21,
+    "type": "single",
+    "question": "Conv parameter 수는 무엇에 의해 결정되는가?",
+    "options": ["kernel 크기, input channel, filter 개수", "output feature map 위치 수", "input 이미지 개수", "batch size만"],
+    "answer": 0
+  },
+  {
+    "number": 22,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Conv 연산량 계산에 필요한 것은?",
+    "options": ["필터 하나의 연산 수", "output activation 개수", "class 개수만", "loss 값"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 23,
+    "type": "single",
+    "question": "Conv parameter 수 (input channel 3, filter 10, kernel 5x5, bias 포함)는?",
+    "options": ["750", "760", "10240", "768000"],
+    "answer": 1
+  },
+  {
+    "number": 24,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Conv parameter와 연산량에 대한 설명으로 맞는 것은?",
+    "options": ["parameter는 위치마다 새로 생기지 않는다", "연산은 output 위치마다 반복된다", "parameter 수는 output width와 height에 비례한다", "연산량은 항상 parameter 수와 같다"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 25,
+    "type": "single",
+    "question": "Conv output size (Input 3x32x32, kernel 5, stride 1, padding 0, filter 10)는?",
+    "options": ["10x32x32", "10x28x28", "3x28x28", "10x30x30"],
+    "answer": 1
+  },
+  {
+    "number": 26,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Conv output size에 영향을 주는 요소는? (정답 2개)",
+    "options": ["kernel size", "stride", "learning rate", "dropout rate"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 27,
+    "type": "single",
+    "question": "Conv output size는? (입력 3×28×28, kernel=3, stride=2, padding=1, filter=6)",
+    "options": ["6×28×28", "6×14×14", "6×13×13", "3×14×14"],
+    "answer": 1
+  },
+  {
+    "number": 28,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Receptive Field에 대한 설명으로 맞는 것은? (정답 2개)",
+    "options": [
+      "입력 이미지에서 영향을 주는 영역이다",
+      "layer가 깊어질수록 증가한다",
+      "항상 kernel 크기와 같다",
+      "filter 개수와 동일하다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 29,
+    "type": "single",
+    "question": "Conv layer 2개(kernel=3, stride=1)의 receptive field를 input 기준으로 계산하면?",
+    "options": ["3", "5", "7", "9"],
+    "answer": 1
+  },
+  {
+    "number": 30,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Translation Equivariance에 대한 설명으로 맞는 것은? (정답 2개)",
+    "options": [
+      "입력이 이동하면 출력도 이동한다",
+      "Convolution의 중요한 특성이다",
+      "출력이 항상 동일하다",
+      "Pooling에서만 발생한다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 31,
+    "type": "single",
+    "question": "입력이 이동하면 출력도 동일하게 이동하는 성질을 무엇이라 하는가?",
+    "options": [
+      "Translation Invariance",
+      "Translation Equivariance",
+      "Regularization",
+      "Normalization"
+    ],
+    "answer": 1
+  },
+  {
+    "number": 32,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "RNN의 특징으로 맞는 것은? (정답 2개)",
+    "options": [
+      "순차 데이터 처리에 적합하다",
+      "hidden state를 사용한다",
+      "항상 병렬 계산 가능하다",
+      "attention을 필수로 사용한다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 33,
+    "type": "single",
+    "question": "RNN이 긴 시퀀스에서 겪는 대표적인 문제는?",
+    "options": [
+      "overfitting",
+      "vanishing gradient",
+      "pooling",
+      "normalization"
+    ],
+    "answer": 1
+  },
+  {
+    "number": 34,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "LSTM이 RNN보다 유리한 이유는? (정답 2개)",
+    "options": [
+      "장기 의존성 학습",
+      "vanishing gradient 완화",
+      "convolution 사용",
+      "parameter가 항상 더 적음"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 35,
+    "type": "single",
+    "question": "LSTM의 핵심 구성 요소는?",
+    "options": [
+      "Skip Connection",
+      "Cell State",
+      "Pooling Layer",
+      "BatchNorm"
+    ],
+    "answer": 1
+  },
+  {
+    "number": 36,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "LSTM Gate에 해당하는 것은? (정답 2개)",
+    "options": [
+      "Forget Gate",
+      "Input Gate",
+      "Pooling Gate",
+      "Residual Gate"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 37,
+    "type": "single",
+    "question": "Attention의 핵심 아이디어는?",
+    "options": [
+      "모든 입력을 동일하게 사용",
+      "중요한 입력에 더 집중",
+      "gradient 제거",
+      "pooling 반복"
+    ],
+    "answer": 1
+  },
+  {
+    "number": 38,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Self-Attention의 특징은? (정답 2개)",
+    "options": [
+      "입력 간 관계를 직접 학습",
+      "병렬 계산 가능",
+      "hidden state를 순차적으로 계산",
+      "CNN에서만 사용"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 39,
+    "type": "single",
+    "question": "Self-Attention에서 Attention Score 계산에 사용되는 것은?",
+    "options": [
+      "Query와 Key",
+      "Value와 Pooling",
+      "Kernel과 Stride",
+      "Bias와 ReLU"
+    ],
+    "answer": 0
+  },
+  {
+    "number": 40,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Transformer의 특징으로 맞는 것은? (정답 2개)",
+    "options": [
+      "Attention을 사용한다",
+      "병렬 처리가 가능하다",
+      "RNN hidden state가 필수이다",
+      "Convolution만 사용한다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 41,
+    "type": "single",
+    "question": "Transformer에서 순서 정보를 제공하기 위해 사용하는 것은?",
+    "options": [
+      "Pooling",
+      "Positional Encoding",
+      "Dropout",
+      "BatchNorm"
+    ],
+    "answer": 1
+  },
+  {
+    "number": 42,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Query, Key, Value에 대한 설명으로 맞는 것은? (정답 2개)",
+    "options": [
+      "Attention 계산에 사용된다",
+      "Self-Attention의 핵심 구성요소이다",
+      "Pooling 연산을 수행한다",
+      "Loss 계산에만 사용된다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 43,
+    "type": "single",
+    "question": "Vision Transformer(ViT)는 이미지를 무엇으로 분할하여 처리하는가?",
+    "options": [
+      "Sequence Token",
+      "Patch",
+      "Bounding Box",
+      "Feature Pyramid"
+    ],
+    "answer": 1
+  },
+  {
+    "number": 44,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Vision Transformer의 특징은? (정답 2개)",
+    "options": [
+      "이미지를 patch로 나눈다",
+      "Transformer 구조를 사용한다",
+      "반드시 convolution layer가 필요하다",
+      "RNN 기반 모델이다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 45,
+    "type": "single",
+    "question": "224×224 이미지를 16×16 patch로 나누면 patch 개수는?",
+    "options": ["196", "224", "256", "128"],
+    "answer": 0
+  },
+  {
+    "number": 46,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "RNN과 Transformer를 비교한 설명으로 맞는 것은? (정답 2개)",
+    "options": [
+      "Transformer는 병렬 계산이 가능하다",
+      "RNN은 순차 계산이 필요하다",
+      "Transformer는 hidden state가 필수이다",
+      "RNN은 sequence를 처리할 수 없다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 47,
+    "type": "single",
+    "question": "Attention Weight를 얻기 위해 일반적으로 사용하는 함수는?",
+    "options": [
+      "ReLU",
+      "Softmax",
+      "Sigmoid",
+      "Pooling"
+    ],
+    "answer": 1
+  },
+  {
+    "number": 48,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Transformer의 장점으로 맞는 것은? (정답 2개)",
+    "options": [
+      "긴 거리 의존성 학습",
+      "병렬 처리",
+      "O(1) 메모리 사용",
+      "Convolution 필요 없음"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 49,
+    "type": "single",
+    "question": "Self-Attention의 계산 복잡도는 시퀀스 길이 N에 대해?",
+    "options": ["O(N)", "O(logN)", "O(N²)", "O(1)"],
+    "answer": 2
+  },
+  {
+    "number": 50,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Transformer Encoder에 포함되는 구성 요소는? (정답 2개)",
+    "options": [
+      "Multi-Head Attention",
+      "Feed Forward Network",
+      "Pooling Layer",
+      "Forget Gate"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 51,
+    "type": "single",
+    "question": "Object Detection의 출력으로 가장 적절한 것은?",
+    "options": ["클래스만 예측", "Bounding Box와 클래스", "픽셀 단위 분류", "영상 전체 특징"],
+    "answer": 1
+  },
+  {
+    "number": 52,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Object Detection과 Classification의 차이는? (정답 2개)",
+    "options": [
+      "Detection은 위치 정보를 예측한다",
+      "Classification은 위치 정보를 제공하지 않는다",
+      "Detection은 label을 사용하지 않는다",
+      "Classification은 CNN을 사용할 수 없다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 53,
+    "type": "single",
+    "question": "Bounding Box를 평가할 때 사용하는 지표는?",
+    "options": ["Softmax", "IoU", "Dropout", "Momentum"],
+    "answer": 1
+  },
+  {
+    "number": 54,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "IoU가 의미하는 것은? (정답 2개)",
+    "options": [
+      "예측 영역과 실제 영역의 겹침 정도",
+      "Intersection / Union",
+      "Loss 함수",
+      "Activation 함수"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 55,
+    "type": "single",
+    "question": "Semantic Segmentation의 특징은?",
+    "options": ["객체 위치만 예측", "픽셀 단위 분류", "Bounding Box만 생성", "Sequence 생성"],
+    "answer": 1
+  },
+  {
+    "number": 56,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Semantic Segmentation과 Instance Segmentation의 차이는? (정답 2개)",
+    "options": [
+      "Instance Segmentation은 객체를 구분한다",
+      "Semantic Segmentation은 같은 클래스 객체를 구분하지 않는다",
+      "Semantic Segmentation은 Bounding Box만 출력한다",
+      "Instance Segmentation은 Pixel 정보를 사용하지 않는다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 57,
+    "type": "single",
+    "question": "Detection에서 False Positive는 무엇인가?",
+    "options": [
+      "정답인데 놓친 경우",
+      "객체가 없는데 있다고 예측",
+      "객체를 정확히 탐지",
+      "정답 클래스 예측"
+    ],
+    "answer": 1
+  },
+  {
+    "number": 58,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "좋은 Object Detector의 조건은? (정답 2개)",
+    "options": [
+      "정확한 위치 예측",
+      "정확한 클래스 예측",
+      "항상 Conv Layer 제거",
+      "Loss가 0이어야만 함"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 59,
+    "type": "single",
+    "question": "ViT에서 이미지를 패치로 나누는 이유는?",
+    "options": ["RNN 입력으로 사용", "Transformer 입력 토큰 생성", "Pooling 제거", "Gradient 감소"],
+    "answer": 1
+  },
+  {
+    "number": 60,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "CNN과 ViT의 차이로 맞는 것은? (정답 2개)",
+    "options": [
+      "CNN은 convolution 사용",
+      "ViT는 patch 기반 입력 사용",
+      "ViT는 attention 사용 불가",
+      "CNN은 이미지 처리 불가"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 61,
+    "type": "single",
+    "question": "Video를 Tensor로 표현하면 일반적으로 포함되는 차원은?",
+    "options": ["H × W", "T × C × H × W", "N × H", "C × W"],
+    "answer": 1
+  },
+  {
+    "number": 62,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Video와 Image의 차이로 맞는 것은? (정답 2개)",
+    "options": [
+      "Video는 시간 축을 포함한다",
+      "Video는 frame sequence이다",
+      "Image는 반드시 sequence이다",
+      "Image는 channel이 없다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 63,
+    "type": "single",
+    "question": "Video Classification의 목표는?",
+    "options": ["Bounding Box 생성", "영상 전체 행동 분류", "Pixel 분류", "Image 생성"],
+    "answer": 1
+  },
+  {
+    "number": 64,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Video Understanding의 어려움은? (정답 2개)",
+    "options": [
+      "시간 정보 처리",
+      "Frame 간 관계 학습",
+      "채널 정보 없음",
+      "Convolution 사용 불가"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 65,
+    "type": "single",
+    "question": "Attention에서 Query와 가장 직접적으로 비교되는 것은?",
+    "options": ["Value", "Key", "Bias", "Stride"],
+    "answer": 1
+  },
+  {
+    "number": 66,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Multi-Head Attention의 장점은? (정답 2개)",
+    "options": [
+      "다양한 관계 학습",
+      "여러 표현 공간 활용",
+      "Gradient 제거",
+      "Pooling 대체 불가"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 67,
+    "type": "single",
+    "question": "Transformer에서 Value의 역할은?",
+    "options": ["Attention Score 계산", "최종 정보 전달", "Loss 계산", "Normalization"],
+    "answer": 1
+  },
+  {
+    "number": 68,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Positional Encoding을 사용하는 이유는? (정답 2개)",
+    "options": [
+      "순서 정보 제공",
+      "Transformer가 위치를 알 수 있도록 함",
+      "Gradient 제거",
+      "Dropout 대체"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 69,
+    "type": "single",
+    "question": "Self-Attention에서 Softmax를 사용하는 이유는?",
+    "options": ["Activation 제거", "Attention Weight 정규화", "Pooling 수행", "Stride 계산"],
+    "answer": 1
+  },
+  {
+    "number": 70,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "RNN보다 Transformer가 유리한 점은? (정답 2개)",
+    "options": [
+      "병렬 처리",
+      "장거리 의존성 학습",
+      "Hidden State 필수",
+      "시간 정보 제거"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 71,
+    "type": "single",
+    "question": "Dropout을 Test Time에 적용하면 일반적으로 어떻게 되는가?",
+    "options": ["일부 뉴런 제거", "모든 뉴런 사용", "Gradient 제거", "Batch 크기 감소"],
+    "answer": 1
+  },
+  {
+    "number": 72,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Overfitting을 줄이는 방법은? (정답 2개)",
+    "options": [
+      "Dropout",
+      "Data Augmentation",
+      "Learning Rate 무한 증가",
+      "Training Data 제거"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 73,
+    "type": "single",
+    "question": "Weight Decay의 목적은?",
+    "options": ["Weight 크기 억제", "데이터 증가", "Label 생성", "Pooling 수행"],
+    "answer": 0
+  },
+  {
+    "number": 74,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Hyperparameter에 해당하는 것은? (정답 2개)",
+    "options": [
+      "Learning Rate",
+      "Batch Size",
+      "Gradient",
+      "Activation Output"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 75,
+    "type": "single",
+    "question": "Validation Set의 주요 목적은?",
+    "options": ["최종 성능 평가", "Hyperparameter 선택", "Weight 초기화", "Gradient 계산"],
+    "answer": 1
+  },
+  {
+    "number": 76,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Gradient Descent의 특징으로 맞는 것은? (정답 2개)",
+    "options": [
+      "Loss를 최소화하는 방향으로 이동한다",
+      "Gradient의 반대 방향으로 이동한다",
+      "항상 한 번에 최적해를 찾는다",
+      "Learning Rate가 필요 없다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 77,
+    "type": "single",
+    "question": "Learning Rate가 너무 작을 때 발생하는 현상은?",
+    "options": ["발산", "학습 속도 저하", "Gradient Explosion", "Overfitting 제거"],
+    "answer": 1
+  },
+  {
+    "number": 78,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Backpropagation의 특징은? (정답 2개)",
+    "options": [
+      "Chain Rule을 사용한다",
+      "Gradient를 계산한다",
+      "Pooling을 수행한다",
+      "Data Augmentation을 수행한다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 79,
+    "type": "single",
+    "question": "Backpropagation에서 덧셈 노드(z=x+y)의 local gradient는?",
+    "options": ["0", "1", "x", "y"],
+    "answer": 1
+  },
+  {
+    "number": 80,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "곱셈 노드(z=x*y)의 gradient 계산에 사용되는 값은? (정답 2개)",
+    "options": ["x", "y", "learning rate", "batch size"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 81,
+    "type": "single",
+    "question": "Gradient의 의미는?",
+    "options": [
+      "함수가 가장 빠르게 증가하는 방향",
+      "함수가 가장 빠르게 감소하는 방향",
+      "Loss의 최소값",
+      "Batch 크기"
+    ],
+    "answer": 0
+  },
+  {
+    "number": 82,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Gradient Checking의 목적은? (정답 2개)",
+    "options": [
+      "Backprop 구현 검증",
+      "Analytic Gradient 검증",
+      "Data Augmentation 수행",
+      "Dropout 적용"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 83,
+    "type": "single",
+    "question": "Numeric Gradient가 Error-Prone한 이유는?",
+    "options": [
+      "Gradient가 존재하지 않음",
+      "Loss를 반복 계산하며 수치 오차 발생",
+      "Backprop을 사용하기 때문",
+      "Learning Rate를 사용하지 않기 때문"
+    ],
+    "answer": 1
+  },
+  {
+    "number": 84,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Overfitting의 특징은? (정답 2개)",
+    "options": [
+      "Train 성능 높음",
+      "Test 성능 낮음",
+      "Train/Test 모두 낮음",
+      "항상 모델이 단순함"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 85,
+    "type": "single",
+    "question": "Underfitting을 해결하기 위한 방법은?",
+    "options": ["모델 복잡도 증가", "Data 제거", "Dropout 증가", "Weight Decay 증가"],
+    "answer": 0
+  },
+  {
+    "number": 86,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Sliding Window 방식의 특징은? (정답 2개)",
+    "options": [
+      "고정 크기 Window를 이동한다",
+      "부분 영역을 순차적으로 처리한다",
+      "이미지 전체를 한 번에 처리한다",
+      "Stride를 사용할 수 없다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 87,
+    "type": "single",
+    "question": "LeNet의 특징은?",
+    "options": ["ImageNet 우승 모델", "손글씨 인식을 위한 초기 CNN", "Transformer 기반", "Attention 사용"],
+    "answer": 1
+  },
+  {
+    "number": 88,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "AlexNet의 특징은? (정답 2개)",
+    "options": ["ReLU 사용", "GPU 활용", "Self-Attention 사용", "LSTM 사용"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 89,
+    "type": "single",
+    "question": "Sigmoid 함수의 미분식은?",
+    "options": ["σ(x)", "σ(x)(1-σ(x))", "1-σ(x)", "σ(x)^2"],
+    "answer": 1
+  },
+  {
+    "number": 90,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "ReLU 함수의 특징은? (정답 2개)",
+    "options": [
+      "x<0이면 출력 0",
+      "계산이 단순하다",
+      "출력이 항상 1",
+      "Softmax를 포함한다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 91,
+    "type": "single",
+    "question": "Pooling의 주요 목적은?",
+    "options": ["Spatial Downsampling", "Gradient 증가", "채널 수 증가", "Loss 계산"],
+    "answer": 0
+  },
+  {
+    "number": 92,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Max Pooling의 특징은? (정답 2개)",
+    "options": ["최대값 선택", "Feature Map 크기 감소", "Weight 생성", "Attention 계산"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 93,
+    "type": "single",
+    "question": "Conv Output Size는? (Input 3×64×64, Kernel=3, Stride=1, Padding=1, Filter=16)",
+    "options": ["16×64×64", "16×62×62", "3×64×64", "16×66×66"],
+    "answer": 0
+  },
+  {
+    "number": 94,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Conv Layer의 Parameter 수 계산에 필요한 것은? (정답 2개)",
+    "options": ["Input Channel", "Kernel Size", "Output Width", "Batch Size"],
+    "answer": [0, 1]
+  },
+  {
+    "number": 95,
+    "type": "single",
+    "question": "Conv Layer의 Parameter 수는? (Input Channel=3, Filter=8, Kernel=3×3, Bias 포함)",
+    "options": ["216", "224", "72", "288"],
+    "answer": 1
+  },
+  {
+    "number": 96,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Receptive Field가 증가하는 경우는? (정답 2개)",
+    "options": [
+      "Layer를 더 쌓을 때",
+      "Kernel Size를 늘릴 때",
+      "Batch Size를 늘릴 때",
+      "Learning Rate를 줄일 때"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 97,
+    "type": "single",
+    "question": "Conv Layer 3개(kernel=3, stride=1)의 receptive field를 input 기준으로 계산하면?",
+    "options": ["3", "5", "7", "9"],
+    "answer": 2
+  },
+  {
+    "number": 98,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "Video Classification과 Image Classification의 차이로 맞는 것은? (정답 2개)",
+    "options": [
+      "Video는 시간 정보를 포함한다",
+      "Video는 Frame Sequence를 입력으로 사용한다",
+      "Image는 Channel이 없다",
+      "Image는 CNN을 사용할 수 없다"
+    ],
+    "answer": [0, 1]
+  },
+  {
+    "number": 99,
+    "type": "single",
+    "question": "Transformer Encoder에서 Attention 다음에 일반적으로 오는 것은?",
+    "options": ["Pooling", "Feed Forward Network", "Bounding Box Regression", "Max Pooling"],
+    "answer": 1
+  },
+  {
+    "number": 100,
+    "type": "multiple",
+    "answer_count": 2,
+    "question": "이번 범위(CS231n Lecture 6~10)에서 다룬 주요 주제로 맞는 것은? (정답 2개)",
+    "options": [
+      "Transformers",
+      "Video Understanding",
+      "Operating System",
+      "Database Indexing"
+    ],
+    "answer": [0, 1]
+  }
+]
